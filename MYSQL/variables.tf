@@ -81,11 +81,7 @@ variable "vpc_security_group_ids" {
 variable "subnet_ids" {
   description       = "A list of subnet IDS"
   type              = "list"
-
-  default           = [
-    "subnet-57e5ae0c",
-    "subnet-cd132daa",
-  ]
+  default     	    = []
 }
 
 variable "publicly_accessible" {
