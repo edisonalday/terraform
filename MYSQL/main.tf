@@ -14,7 +14,7 @@ module "db" {
   instance_class                      = "${var.instance_class}"
   allocated_storage                   = "${var.allocated_storage}"
   storage_encrypted                   = "${var.storage_encrypted}"
-  #name                               = "${var.identifier}"
+  name                                = "${var.identifier}"
   username                            = "${var.username}"
   password                            = "${var.password}"
   port                                = "${var.port}"
