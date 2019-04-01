@@ -34,8 +34,8 @@ variable "allocated_storage" {
 }
 
 variable "storage_encrypted" {
-  default           = "false"
-  description       = "Specifies whether the DB instance is encrypted"
+  default           = "true"
+  description       = "Specifies whether the DB instance is encrypted. DB Engine sqlserver-ex does not support encryption at rest"
 }
 
 variable "name" {
@@ -117,7 +117,7 @@ variable "auto_minor_version_upgrade" {
 }
 
 variable "iam_database_authentication_enabled" {
-  default           = "false"
+  default           = "true"
   description       = "Specifies whether or mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled"
 }
 
