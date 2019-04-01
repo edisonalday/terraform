@@ -29,7 +29,7 @@ variable "instance_class" {
 }
 
 variable "allocated_storage" {
-  default           = 20
+  default           = 
   description       = "The allocated storage in gigabytes"
 }
 
@@ -97,7 +97,7 @@ variable "multi_az" {
 }
 
 variable "final_snapshot_identifier" {
-  default           = "scbmssql-snapshot"
+  default           = "mssql-snapshot"
   description       = "Database snapshot identifier"
 }
 
