@@ -34,7 +34,7 @@ variable "allocated_storage" {
 }
 
 variable "storage_encrypted" {
-  default           = "true"
+  default           = "false"
   description       = "Specifies whether the DB instance is encrypted"
 }
 
