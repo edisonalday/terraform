@@ -1,6 +1,6 @@
 // EC2 mandatory variables
 variable "name" {
-  default     = "terraform-instance"
+  default     = ""
   description = "Assign this name to the instance"
 }
 
@@ -56,7 +56,7 @@ variable "ebs_count" {
 
 variable "ebs_size" {
   description = "Size of the EBS volumes. This has to be consisten with EBS_count and block_device_names"
-  default     = ""
+  default     = 20
 }
 
 variable "encrypted" {
@@ -76,7 +76,7 @@ variable "block_device_names" {
 
 variable "root_volume_size" {
   description = "Size of the Root volume"
-  default     = ""
+  default     = 10
 }
 
 variable "root_volume_type" {
