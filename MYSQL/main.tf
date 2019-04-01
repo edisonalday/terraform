@@ -1,7 +1,7 @@
 module "db-mysql" {
   //https://registry.terraform.io/modules/terraform-aws-modules/rds/aws/1.26.0
   source                              = "terraform-aws-modules/rds/aws"
-  version                             = "1.26.0"
+  version                             = "1.28.0"
   identifier                          = "${var.identifier}"
   engine                              = "${var.engine}"
   engine_version                      = "${var.engine_version}"
