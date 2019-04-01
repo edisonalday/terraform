@@ -29,7 +29,7 @@ variable "instance_class" {
 }
 
 variable "allocated_storage" {
-  default           = 
+  default           = ""
   description       = "The allocated storage in gigabytes"
 }
 
