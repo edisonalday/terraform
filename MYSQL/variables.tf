@@ -1,5 +1,5 @@
 variable "identifier" {
-  default           = "mysql"
+  default           = ""
   description       = "The name of the RDS instance, if omitted, Terraform will assign a random, unique identifier"
 }
 
@@ -24,27 +24,27 @@ variable "family" {
 }
 
 variable "instance_class" {
-  default           = "db.t2.micro"
+  default           = ""
   description       = "The instance type of the RDS instance"
 }
 
 variable "allocated_storage" {
-  default           = 5
+  default           = 20
   description       = "The allocated storage in gigabytes"
 }
 
 variable "storage_encrypted" {
-  default           = "false"
+  default           = "true"
   description       = "Specifies whether the DB instance is encrypted"
 }
 
 variable "username" {
-  default           = "scb"
+  default           = ""
   description       = "Username for the database"
 }
 
 variable "password" {
-  default           = "password"
+  default           = ""
   description       = "Password for the database"
 }
 
@@ -71,11 +71,8 @@ variable "backup_retention_period" {
 # optional
 variable "vpc_security_group_ids" {
   description       = "Subnet ID where the isntance has to be created"
-  type              = "list"
-
-  default           = [
-    "sg-8f7ac8f7"
-  ]
+  type              = "list
+  default           = []
 }
 
 variable "subnet_ids" {
@@ -95,7 +92,7 @@ variable "multi_az" {
 }
 
 variable "final_snapshot_identifier" {
-  default           = "scbdatabase-snapshot"
+  default           = "scbmysql-snapshot"
   description       = "Database snapshot identifier"
 }
 
@@ -193,65 +190,65 @@ variable "parameter_time_zone" {
 // tags
 variable "tag_environment" {
   description       = "Tag name to be assigned to the instance"
-  default           = "dev"
+  default           = ""
 }
 
 variable "tag_company" {
   description       = "Company name to be tagged to the instance"
-  default           = "scb"
+  default           = ""
 }
 
 variable "tag_applevel" {
   description       = "Tag the instance with the app level"
-  default           = "1"
+  default           = ""
 }
 
 variable "tag_apptype" {
   description       = "Tag the instance with the app type"
-  default           = "nonprod"
+  default           = ""
 }
 
 variable "tag_appname" {
   description       = "Tag the instance with the app name"
-  default           = "scbeasymobile"
+  default           = ""
 }
 
 variable "tag_function" {
   description       = "Tag the instance with the app function"
-  default           = "app"
+  default           = ""
 }
 
 variable "tag_adminname1" {
   description       = "Tag the instance with the admins name"
-  default           = "abc@scb.co.th"
+  default           = ""
 }
 
 variable "tag_adminname2" {
   description       = "Tag the instance with the admins name"
-  default           = "xyz@scb.co.th"
+  default           = ""
 }
 
 variable "tag_dbadminname1" {
   description       = "Tag the instance with the db admin name"
-  default           = "abcd@scb.co.th"
+  default           = ""
 }
 
 variable "tag_dbadminname2" {
   description       = "Tag the instance with the db admin name"
-  default           = "xyzd@scb.co.th"
+  default           = ""
 }
 
 variable "tag_ec2startstop" {
   description       = "Tag the instance ec2 start and stop time and date"
-  default           = "Mon-Fri_07:00-21:00"
+  default           = ""
 }
 
 variable "tag_ec2backup" {
   description       = "Tag the instance with ec2 backup details"
-  default           = "dev-2M"
+  default           = ""
 }
 
 variable "tag_createdby" {
   description       = "To specify how this instance was created"
-  default           = "Terraform"
+  default           = ""
 }

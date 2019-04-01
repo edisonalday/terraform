@@ -1,10 +1,4 @@
-/*
-provider "aws" {
-  region = "ap-northeast-2"
-}
-*/
-
-module "db" {
+module "db-mysql" {
   //https://registry.terraform.io/modules/terraform-aws-modules/rds/aws/1.26.0
   source                              = "terraform-aws-modules/rds/aws"
   version                             = "1.26.0"
