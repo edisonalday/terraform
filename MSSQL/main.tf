@@ -28,9 +28,6 @@ module "db-mssql" {
   allow_major_version_upgrade         = "${var.allow_major_version_upgrade}"
   auto_minor_version_upgrade          = "${var.auto_minor_version_upgrade}"
   iam_database_authentication_enabled = "${var.iam_database_authentication_enabled}"
-  create_db_subnet_group              = "${var.create_db_subnet_group}"
-  create_db_parameter_group           = "${var.create_db_parameter_group}"
-  create_db_option_group              = "${var.create_db_option_group}"
   tags                                = {
     "tag_environment"                 = "${var.tag_environment}"
     "tag_company"                     = "${var.tag_company}"

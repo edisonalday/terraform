@@ -57,20 +57,13 @@ variable "port" {
 variable "vpc_security_group_ids" {
   description       = "Subnet ID where the isntance has to be created"
   type              = "list"
-
-  default           = [
-    ""
-  ]
+  default           = []
 }
 
 variable "subnet_ids" {
   description       = "A list of subnet IDS"
   type              = "list"
-
-  default           = [
-    "",
-    "",
-  ]
+  default           = []
 }
 
 variable "maintenance_window" {
@@ -121,21 +114,6 @@ variable "auto_minor_version_upgrade" {
 variable "iam_database_authentication_enabled" {
   default           = "true"
   description       = "Specifies whether or mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled"
-}
-
-variable "create_db_subnet_group" {
-  default           = "1"
-  description       = "Creates a new DB subnet group"
-}
-
-variable "create_db_parameter_group" {
-  default           = "1"
-  description       = "Creates a new DB parameter group"
-}
-
-variable "create_db_option_group" {
-  default           = "1"
-  description       = "Creates a new DB option group"
 }
 
 variable "license_model" {
