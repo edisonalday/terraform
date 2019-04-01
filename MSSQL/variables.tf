@@ -38,6 +38,11 @@ variable "storage_encrypted" {
   description       = "Specifies whether the DB instance is encrypted"
 }
 
+variable "name" {
+  default           = ""
+  description       = "The database name. Should be set to null for engine: sqlserver-ex"
+}
+
 variable "username" {
   default           = ""
   description       = "Username for the database"
