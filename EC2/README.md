@@ -103,8 +103,3 @@ Description: List of subnets to be associated with the instance
 Type: `list`
 
 Default: `<list>`
-
-
-## Author
-
-Satish Balakrishnan 

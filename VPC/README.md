@@ -117,7 +117,3 @@ Description: List of IDs of public subnets
 ### vpc\_id
 
 Description: The ID of the VPC
-
-## Author
-
-Satish Balakrishnan 
