@@ -117,7 +117,7 @@ variable "auto_minor_version_upgrade" {
 }
 
 variable "iam_database_authentication_enabled" {
-  default           = "true"
+  default           = "false"
   description       = "Specifies whether or mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled"
 }
 
