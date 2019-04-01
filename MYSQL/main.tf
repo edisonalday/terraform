@@ -1,6 +1,8 @@
+/*
 provider "aws" {
-  region = "ap-southeast-1"
+  region = "ap-northeast-2"
 }
+*/
 
 module "db" {
   //https://registry.terraform.io/modules/terraform-aws-modules/rds/aws/1.26.0
