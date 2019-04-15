@@ -21,17 +21,13 @@ If you need private subnets that should have no Internet routing intra_subnets s
 
 ```hcl
 module "vpc" {
-  source = "https://github.com/edisonalday/tf-modules/tree/master/VPC"
-
-  name = "my-vpc"
-  cidr = "10.0.0.0/16"
-
+  source          = "https://github.com/edisonalday/tf-modules/tree/master/VPC"
+  name            = "my-vpc"
+  cidr            = "10.0.0.0/16"
   azs             = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
   private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
   public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
-  intra_subnets   =["..."]
-  ...
-  ...
+  intra_subnets   = ["..."]
   ...
 }
 ```
@@ -44,7 +40,7 @@ Description: A list of availability zones in the region
 
 Type: `list`
 
-Default: `<list>`
+Default: `[]`
 
 ### cidr
 
@@ -68,7 +64,7 @@ Description: A list of private subnets inside the VPC
 
 Type: `list`
 
-Default: `<list>`
+Default: `[]`
 
 ### public\_subnets
 
@@ -76,14 +72,13 @@ Description: A list of public subnets inside the VPC
 
 Type: `list`
 
-Default: `<list>`
+Default: `[]`
 
 The following input variables are required:
 
 ## Optional Inputs
 
 The following input variables are optional (have default values):
-
 
 ### tag\_name
 

@@ -32,7 +32,7 @@ Description: Subnet ID where the isntance has to be created
 
 Type: `list`
 
-Default: `<list>`
+Default: `[]`
 
 ## Optional Inputs
 
@@ -102,4 +102,4 @@ Description: List of subnets to be associated with the instance
 
 Type: `list`
 
-Default: `<list>`
+Default: `[]`
