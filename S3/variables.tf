@@ -58,7 +58,7 @@ variable "instance_account" {
 
 
 // tags
-variable "tag_environment" {
+variable "tag_name" {
   description       = "Tag name to be assigned to the instance"
   default           = ""
 }
