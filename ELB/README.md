@@ -15,12 +15,12 @@ variables as shown below to modify the defaults. When you specify number_of_inst
 
 ```
 module "elb_http" {
-  source 			  = "https://github.com/edisonalday/tf-modules/tree/master/ELB"
-  name                = "testprojectelb"
-  subnets             = ["${module.vpc.intra_subnets}"]
-  security_groups     = ["${module.vpc.vpc_security_group_ids}"]
-  number_of_instances = 2
-  instances           = ["${module.ec2_instance.ids}"]
+  source 				= "https://github.com/edisonalday/tf-modules/tree/master/ELB"
+  name                	= "testprojectelb"
+  subnets             	= ["${module.vpc.intra_subnets}"]
+  security_groups     	= ["${module.vpc.vpc_security_group_ids}"]
+  number_of_instances 	= 2
+  instances           	= ["${module.ec2_instance.ids}"]
  }
 ```
 
