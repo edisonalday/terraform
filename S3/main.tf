@@ -24,19 +24,8 @@ resource "aws_s3_bucket" "s3" {
     }
   }
     tags                	  = {
-    "tag_environment"    	  = "${var.tag_environment}"
-    "tag_company"           = "${var.tag_company}"
-    "tag_applevel"          = "${var.tag_applevel}"
-    "tag_apptype"           = "${var.tag_apptype}"
-    "tag_appname"           = "${var.tag_appname}"
-    "tag_function"          = "${var.tag_function}"
-    "tag_adminname1"        = "${var.tag_adminname1}"
-    "tag_adminname2"        = "${var.tag_adminname2}"
-    "tag_dbadminname1"      = "${var.tag_dbadminname1}"
-    "tag_dbadminname2"      = "${var.tag_dbadminname2}"
-    "tag_ec2startstop"      = "${var.tag_ec2startstop}"
-    "tag_ec2backup"         = "${var.tag_ec2backup}"
-    "tag_createdby"         = "${var.tag_createdby}"
+    "Name"    	            = "${var.tag_environment}"
+    "Company"               = "${var.tag_company}"
   } 
 }
 
@@ -56,7 +45,7 @@ resource "aws_s3_bucket_policy" "s3_bucket_policy" {
       "Resource": "${aws_s3_bucket.s3.arn}/*",
       "Condition" : {
         "IpAddress": {
-         "aws:SourceIP": "42.60.68.26/32"
+         "aws:SourceIP": ""
          }
         },
         "Principal": "*"
