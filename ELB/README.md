@@ -33,6 +33,7 @@ The following input variables are required:
 Description: Instances to be associated to the LB
 
 Type: `list`
+Default: `[]`
 
 ### number\_of\_instances
 
@@ -138,7 +139,7 @@ Description: List of subnets to be associated with the instance
 
 Type: `list`
 
-Default: `<list>`
+Default: `[]`
 
 ### target
 
