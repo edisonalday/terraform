@@ -1,14 +1,14 @@
 resource "aws_s3_bucket" "s3" {
-    bucket              	= "${var.bucket}"
-    acl                 	= "${var.acl}"
-    force_destroy         = "${var.force_destroy}"
+    bucket              	 = "${var.bucket}"
+    acl                 	 = "${var.acl}"
+    force_destroy           = "${var.force_destroy}"
     versioning {
-      enabled           	= "${var.versioning}"
+      enabled           	 = "${var.versioning}"
     }
   server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
-        sse_algorithm     = "${var.sse_algorithm}"
+        sse_algorithm       = "${var.sse_algorithm}"
       }
     }
  }
@@ -23,7 +23,7 @@ resource "aws_s3_bucket" "s3" {
       storage_class         = "${var.storage_class_b}"
     }
   }
-    tags                	  = {
+    tags                    = {
     "Name"    	            = "${var.tag_environment}"
     "Company"               = "${var.tag_company}"
   } 
