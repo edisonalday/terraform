@@ -14,14 +14,7 @@ module "vpc" {
   enable_vpn_gateway    = "${var.enable_vpn_gateway}"
 
   tags                  = {
-    "tag_environment"   = "${var.tag_environment}"
-    "tag_company"       = "${var.tag_company}"
-    "tag_applevel"      = "${var.tag_applevel}"
-    "tag_apptype"       = "${var.tag_apptype}"
-    "tag_appname"       = "${var.tag_apptype}"
-    "tag_function"      = "${var.tag_function}"
-    "tag_adminname1"    = "${var.tag_adminname1}"
-    "tag_adminname2"    = "${var.tag_adminname2}"
-    "tag_createdby"     = "${var.tag_createdby}"
+    "Name"              = "${var.tag_name}"
+    "Company"           = "${var.tag_company}"
   }
 }

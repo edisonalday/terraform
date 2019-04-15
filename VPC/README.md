@@ -21,7 +21,7 @@ If you need private subnets that should have no Internet routing intra_subnets s
 
 ```hcl
 module "vpc" {
-  source = "https://github.com/xsatishx/terraform/vpc"
+  source = "https://github.com/edisonalday/tf-modules/vpc"
 
   name = "my-vpc"
   cidr = "10.0.0.0/16"
@@ -85,8 +85,7 @@ The following input variables are required:
 The following input variables are optional (have default values):
 
 
-
-### tag\_environment
+### tag\_name
 
 Description: Tag name to be assigned to the instance
 
@@ -94,9 +93,9 @@ Type: `string`
 
 Default: `"dev"`
 
-### tag\_name
+### tag\_company
 
-Description: Tag name to be assigned to the instance
+Description: Tag company to be assigned to the instance
 
 Type: `string`
 

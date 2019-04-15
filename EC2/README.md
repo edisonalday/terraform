@@ -94,7 +94,7 @@ Description: Type key to be used for ssh
 
 Type: `string`
 
-Default: `"satish-scb"`
+Default: `""`
 
 ### subnet\_ids
 

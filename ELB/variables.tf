@@ -82,67 +82,12 @@ variable "ebs_count" {
 */
 
 // tags
-variable "tag_environment" {
+variable "tag_name" {
   description = "Tag name to be assigned to the instance"
   default     = ""
 }
 
 variable "tag_company" {
-  description = "Company name to be tagged to the instance"
-  default     = ""
-}
-
-variable "tag_applevel" {
-  description = "Tag the instance with the app level"
-  default     = ""
-}
-
-variable "tag_apptype" {
-  description = "Tag the instance with the app type"
-  default     = ""
-}
-
-variable "tag_appname" {
-  description = "Tag the instance with the app name"
-  default     = ""
-}
-
-variable "tag_function" {
-  description = "Tag the instance with the app function"
-  default     = ""
-}
-
-variable "tag_adminname1" {
-  description = "Tag the instance with the admins name"
-  default     = ""
-}
-
-variable "tag_adminname2" {
-  description = "Tag the instance with the admins name"
-  default     = ""
-}
-
-variable "tag_dbadminname1" {
-  description = "Tag the instance with the db admin name"
-  default     = ""
-}
-
-variable "tag_dbadminname2" {
-  description = "Tag the instance with the db admin name"
-  default     = ""
-}
-
-variable "tag_ec2startstop" {
-  description = "Tag the instance ec2 start and stop time and date"
-  default     = ""
-}
-
-variable "tag_ec2backup" {
-  description = "Tag the instance with ec2 backup details"
-  default     = ""
-}
-
-variable "tag_createdby" {
-  description = "To specify how this instance was created"
+  description = "Tag company name to be assigned to the instance"
   default     = ""
 }
