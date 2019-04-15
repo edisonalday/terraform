@@ -21,7 +21,7 @@ If you need private subnets that should have no Internet routing intra_subnets s
 
 ```hcl
 module "vpc" {
-  source = "https://github.com/edisonalday/tf-modules/vpc"
+  source = "https://github.com/edisonalday/tf-modules/tree/master/VPC"
 
   name = "my-vpc"
   cidr = "10.0.0.0/16"
